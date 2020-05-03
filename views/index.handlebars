@@ -1,21 +1,21 @@
-<h1>Eat Da Burgers</h1>
+<h1>Burgers</h1>
 
-<h2>Available Burgers</h2>
-{{!-- look at cat views to make a burger block on line 8 --}}
+<h2>Burgers Ready To Eat</h2>
+
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    {{> burgers/burger-block devoured=true}}
+    {{> burgers/burger-block}}
     {{/unless}}
     {{/each}}
 </ul>
 
-<h2>Burgers that have been devoured</h2>
+<h2>Burgers in Your Tum-tum</h2>
 
 <ul>
     {{#each burgers}}
     {{#if devoured}}
-    {{> burgers/burger-block devoured=false}}
+    {{> burgers/burger-block}}
     {{/if}}
     {{/each}}
 </ul>
@@ -24,9 +24,8 @@
 <form class="create-form">
 
     <div class="form-group">
-        <label for="burger-name">Burger Name:</label>
-        <input type="text" id="burger-name" name="burger-name">
+        <label for="newBurger">Burger Name</label>
+        <input type="text" id="newBurger" name="newBurger">
     </div>
-
     <button type="submit">Add Burger</button>
 </form>

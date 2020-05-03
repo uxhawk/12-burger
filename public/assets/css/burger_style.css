@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url("../img/burger.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.6);
+}

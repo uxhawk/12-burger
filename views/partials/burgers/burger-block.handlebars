@@ -1,9 +1,12 @@
-<li>
-    {{burger_name}}
-
-    {{#unless devoured}}
-    <button data-id="{{id}}" class="set-devoured">
-        EAT DA BURGER
-    </button>
-    {{/unless}}
+<li class="pb-2 list-group-item">
+    <div class="row">
+        <div class="col-4 d-flex align-items-center justify-content-start">{{burger_name}}</div>
+        <div class="col-8 d-flex align-items-center justify-content-end">
+            {{#unless devoured}}
+            <button data-id="{{id}}" class="set-devoured btn btn-info">
+                <i class="fas fa-hamburger pr-2"></i> EAT DA BURGER
+            </button>
+            {{/unless}}
+        </div>
+    </div>
 </li>
